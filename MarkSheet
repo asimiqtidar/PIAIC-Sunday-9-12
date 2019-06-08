@@ -1,0 +1,40 @@
+chemistry = 75
+physics = 85
+maths = 90
+urdu = 65
+english = 68
+
+total_marks = 500
+total_marks_obtained = chemistry + physics + maths + urdu + english
+
+percentage = (total_marks_obtained / total_marks) * 100
+
+#print (percentage)
+
+if (percentage >= 90):
+    grade = 'A+'
+elif (percentage >= 80):    
+    grade = 'A'
+elif (percentage >= 70):    
+    grade = 'B'
+elif (percentage >= 60):    
+    grade = 'C'
+elif (percentage >= 50):    
+    grade = 'D'    
+else:   
+    grade = 'Fail'    
+    
+print ("=====================================")    
+print ("Mark Sheet")
+print ("=====================================")
+print ("Chemistry: " + str(chemistry) + " / 100")
+print ("Physics: " + str(physics) + " / 100")
+print ("Mathematics: " + str(maths) + " / 100")
+print ("Urdu: " + str(urdu) + " / 100")
+print ("English: " + str(english) + " / 100")
+print ("-------------------------------------")    
+print ("Total Marks: " + str(total_marks))    
+print ("Marks Obtained: " + str(total_marks_obtained))    
+print ("-------------------------------------")    
+print ("Grade: " + grade)    
+print ("-------------------------------------")    

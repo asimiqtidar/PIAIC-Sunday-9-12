@@ -48,6 +48,10 @@ else:
 
 # Assignment No 05:  Calculate Volume of a sphere
 
+radius = float(input("Enter Radius of Sphere: "))
+vol = (4 * 22 * radius * radius * radius) / (3 * 7)
+
+print("Volume of the Sphere with Radius", radius, "is", vol)
 
 # --------------------------- End of Assignment No 05 ----------------------------------    
 

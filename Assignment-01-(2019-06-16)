@@ -22,3 +22,18 @@ else:
     print("Zero Entered")
     
 # --------------------------- End of Assignment No 02 ----------------------------------    
+
+# --------------------------- Start of Assignment No 03 ----------------------------------
+
+# Assignment No 03:  Divisibility Check of two numbers
+
+numerator = int(input("Enter Numerator: "))
+denominator = int(input("Enter Denominator: "))
+
+if ((numerator / denominator) == int(numerator / denominator)):
+    print("Number", numerator, "is Completely divisible by ", denominator)
+else:
+    print("Number", numerator, "is not Completely divisible by ", denominator)
+    
+# --------------------------- End of Assignment No 03 ----------------------------------    
+

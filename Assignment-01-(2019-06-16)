@@ -75,6 +75,13 @@ print(num, "Copies of", ustr, "are", st)
 
 # Assignment No 07:  Check if number is Even or Odd
 
+num = int(input("Enter Number: "))
+
+if ((num / 2) == int(num / 2)):
+    print(num, "is Even")
+else:
+    print(num, "is Odd")
+    
 
 # --------------------------- End of Assignment No 07 ----------------------------------    
 
@@ -82,6 +89,20 @@ print(num, "Copies of", ustr, "are", st)
 
 # Assignment No 08:  Vowel Tester
 
+vowels = ("A", "E", "I", "O", "U")
+
+st = input("Enter a character: ")
+vowel_found = 0
+
+for v in vowels:
+    if (v == st.upper()):
+        vowel_found = 1
+        break;
+
+if (vowel_found == 1):
+    print("Letter", st, "is Vowel")
+else:
+    print("Letter", st, "is not Vowel")
 
 # --------------------------- End of Assignment No 08 ----------------------------------    
 
@@ -89,6 +110,12 @@ print(num, "Copies of", ustr, "are", st)
 
 # Assignment No 09:  Triangle area
 
+base = float(input("Enter magnitude of Triangle base: "))
+height = float(input("Enter Magnitude of Triangle Height: "))
+
+area = (base * height) / 2
+
+print("Area of a Triangle with Height", height, "and Base", base, "is", area)
 
 # --------------------------- End of Assignment No 09 ----------------------------------    
 
@@ -96,6 +123,18 @@ print(num, "Copies of", ustr, "are", st)
 
 # Assignment No 10:  Calculate Interest
 
+p = float(input("Please enter principal amount: "))
+rate = float(input("Please Enter Rate of interest in %: "))
+years = int(input("Enter number of years for investment: "))
+
+powered_rate = 1
+
+for x in range (0, years):
+    powered_rate *= (rate + 1)
+    
+interest = p * (powered_rate - 1)
+
+print("After", years, "years, your principal amount", p, "over an interest rate of", rate, "% will be", p + interest)
 
 # --------------------------- End of Assignment No 10 ----------------------------------    
 

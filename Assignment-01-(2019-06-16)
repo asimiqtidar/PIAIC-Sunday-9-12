@@ -1,5 +1,24 @@
-# Assignment # 01:  Calculate Area of a Circle
+# --------------------------- Start of Assignment No 01 ----------------------------------
 
-radius = float(input("Input Radius:"))
+# Assignment No 01:  Calculate Area of a Circle
+
+radius = float(input("Input Radius: "))
 area = radius * radius * 22 / 7
 print("Area of Circle with radius", radius, "is", area)
+
+# --------------------------- End of Assignment No 01 ----------------------------------
+
+# --------------------------- Start of Assignment No 02 ----------------------------------
+
+# Assignment No 02:  Check Number either positive, negative or zero
+
+num = int(input("Enter Number: "))
+
+if num > 0:
+    print("Positive Number Entered")
+elif num < 0:    
+    print("Negative Number Entered")
+else:
+    print("Zero Entered")
+    
+# --------------------------- End of Assignment No 02 ----------------------------------    

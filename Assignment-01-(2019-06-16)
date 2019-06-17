@@ -59,6 +59,15 @@ print("Volume of the Sphere with Radius", radius, "is", vol)
 
 # Assignment No 06:  Copy string n times
 
+ustr = input("Enter String: ")
+num = int(input("How many copies of String you need: "))
+
+st = "";
+
+for x in range(num):
+    st += ustr;
+    
+print(num, "Copies of", ustr, "are", st)
 
 # --------------------------- End of Assignment No 06 ----------------------------------    
 

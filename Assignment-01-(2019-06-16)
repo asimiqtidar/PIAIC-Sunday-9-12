@@ -159,6 +159,11 @@ print("Distance between points (", x1, ",", y1, ") and (", x2, ",", y2, ") is", 
 
 # Assignment No 12:  Feet to Centimeter Converter
 
+h = float(input("Enter Height in Feet: "))
+
+cm = h * 30.48
+
+print("There are", cm, "Cm in", h, "ft")
 
 # --------------------------- End of Assignment No 12 ----------------------------------    
 
@@ -166,6 +171,17 @@ print("Distance between points (", x1, ",", y1, ") and (", x2, ",", y2, ") is", 
 
 # Assignment No 13:  BMI Calculator
 
+import math
+
+h = float(input("Enter Height in Cm:"))
+w = float(input("Enter Weight in Kg:"))
+
+#convert cm into meters
+hm = h / 100
+
+bmi = w / math.pow(hm, 2)
+
+print("Your BMI is", bmi)
 
 # --------------------------- End of Assignment No 13 ----------------------------------    
 
@@ -173,6 +189,14 @@ print("Distance between points (", x1, ",", y1, ") and (", x2, ",", y2, ") is", 
 
 # Assignment No 14:  Sum of n Positive Integers
 
+num = int(input("Enter value of n: "))
+
+total = 0
+
+for x in range(num):
+    total += (x+1)
+    
+print("Sum of n Positive integers till", num, "is", total)
 
 # --------------------------- End of Assignment No 14 ----------------------------------    
 
@@ -180,6 +204,20 @@ print("Distance between points (", x1, ",", y1, ") and (", x2, ",", y2, ") is", 
 
 # Assignment No 15:  Digits Sum of a Number
 
+n = str(input("Enter a number: "))
+
+st = '';
+total = 0
+
+for x in n:
+    total += int(x)
+    if (st == ''):
+        st += x
+    else:
+        st += ' + ' + x
+
+        
+print("Sum of", st, "is", total)
 
 # --------------------------- End of Assignment No 15 ----------------------------------    
 
@@ -187,6 +225,26 @@ print("Distance between points (", x1, ",", y1, ") and (", x2, ",", y2, ") is", 
 
 # Assignment No 16:  Decimal to Binary Converter
 
+num = int(input("Enter a decimal number: "))
+
+binary = '';
+divisor = 2
+
+temp_num = num
+
+while (True):
+    
+    q = int(temp_num / divisor)
+    r = temp_num - (q * divisor)
+    
+    binary = str(r) + binary
+    
+    if (q == 0):
+        break
+        
+    temp_num = q                
+
+print("Binary Representation of", num, "is", binary)
 
 # --------------------------- End of Assignment No 16 ----------------------------------    
 

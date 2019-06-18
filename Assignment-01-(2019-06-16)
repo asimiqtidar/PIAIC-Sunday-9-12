@@ -272,6 +272,31 @@ print("Decimal Representation of", num, "is", int(dec))
 
 # Assignment No 18:  Vowel and Consonants Counter
 
+#------- function to check if a single character is a vowel or not ---------
+def is_vowel(chr, arr):
+    for v in arr:
+        if (v == chr.upper()):
+            return True
+        
+    return False
+
+txt = input("Enter text: ")
+
+vowels = ("A", "E", "I", "O", "U")
+
+total_vowels = 0
+total_consonants = 0
+
+for x in txt:
+    if (x != ' '):
+        if (is_vowel(x, vowels)):
+            total_vowels += 1
+        else:
+            total_consonants += 1
+        
+print("Vowels:", total_vowels)
+print("Consonants:", total_consonants)
+
 
 # --------------------------- End of Assignment No 18 ----------------------------------    
 
@@ -279,13 +304,58 @@ print("Decimal Representation of", num, "is", int(dec))
 
 # Assignment No 19:  Palindrome tester
 
+str1 = str(input("Enter text: "))
+str2 = ''
 
+for x in str1:
+    str2 = x + str2
+
+
+if (str1.upper() == str2.upper()):
+    print("Text", str1, "is Palindrome")
+else:           
+    print("Text", str1, "is not a Palindrome")
+    
 # --------------------------- End of Assignment No 19 ----------------------------------    
 
 # --------------------------- Start of Assignment No 20 ----------------------------------
 
 # Assignment No 20:  Count Alphabets, Numbers and Special Characters
 
+#------- function to check if a single character is an Alphabet or not ---------
+def isAlphabet(chr, arr):
+    for a in arr:
+        if (a == chr.upper()):
+            return True
+        
+    return False
+
+alphabets = []
+
+for n in range(65, 90):
+    alphabets.append(chr(n))
+    
+str1 = str(input("Enter text: "))
+
+alphas = 0
+nums = 0
+spaces = 0
+specials = 0
+
+for x in str1:
+    if (isAlphabet(x, alphabets)):
+        alphas += 1
+    elif (x.isnumeric()):
+        nums += 1
+    elif (x == ' '):
+        spaces += 1
+    else:
+        specials += 1
+
+print("Numbers =", nums)        
+print("Alphabets =", alphas)        
+print("Special Characters =", specials)        
+print("Spaces =", spaces)      
 
 # --------------------------- End of Assignment No 20 ----------------------------------    
 

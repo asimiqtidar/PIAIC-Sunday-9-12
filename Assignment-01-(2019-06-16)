@@ -41,6 +41,92 @@ else:
 
 # Assignment No 04:  Days Calculator
 
+# ====================================== Method 1 ==========================================
+def isLeapYear (y):
+    if ((y/4) == int(y/4)):
+        return True;
+    else:
+        return False
+
+def getDaysFromStartOfYear (dt, arr):
+    
+    total_days = 0
+    
+    for x in range(0, dt[1]):
+        
+        if (x == dt[1]-1):
+            total_days += dt[0]
+        else:
+            total_days += arr[x]
+            
+    if (isLeapYear(dt[2])):
+        return (total_days + 1)
+    else:
+        return total_days
+    
+num_days_in_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+date_str_1 = input("Enter start date in (dd/mm/yy) format: ")
+date_str_2 = input("Enter end date in (dd/mm/yy) format: ")
+
+date1 = date_str_1.split('/')
+date2 = date_str_2.split('/')
+
+for n in range(0,3):
+    date1[n] = int(date1[n])
+    date2[n] = int(date2[n])
+    
+#print(getDaysFromStartOfYear (date1, num_days_in_months))
+
+total_days = 0
+
+if (date1[2] == date2[2]):
+    
+    dd = getDaysFromStartOfYear (date2, num_days_in_months) - getDaysFromStartOfYear (date1, num_days_in_months)
+    #print(date1[2], ":", dd)
+    total_days += dd
+    
+else:        
+    
+    for x in range(date1[2], date2[2]+1):
+    
+        if (x == date2[2]):
+            dd = getDaysFromStartOfYear (date2, num_days_in_months)
+            #print(x, ":", dd)
+            total_days += dd
+        
+        if (x == date1[2]):
+            dd = getDaysFromStartOfYear ([31,12,x], num_days_in_months) - getDaysFromStartOfYear (date1, num_days_in_months)
+            #print(x, ":", dd)
+            total_days += dd
+        
+        if x != date2[2] and x != date1[2]:
+            dd = getDaysFromStartOfYear ([31,12,x], num_days_in_months)
+            #print(x, ":", dd)
+            total_days += dd
+        
+print("There are", total_days, "days in between", date_str_1, "and", date_str_2)    
+    
+# ====================================== Method 2 ==========================================    
+
+from datetime import date
+
+date_str_1 = input("Enter start date in (dd/mm/yy) format: ")
+date_str_2 = input("Enter end date in (dd/mm/yy) format: ")
+
+date1 = date_str_1.split('/')
+date2 = date_str_2.split('/')
+
+for n in range(0,3):
+    date1[n] = int(date1[n])
+    date2[n] = int(date2[n])
+    
+d1 = date(date1[2], date1[1], date1[0])
+d2 = date(date2[2], date2[1], date2[0])
+
+d = d2 - d1
+
+print("There are", d.days, "days in between", date_str_1, "and", date_str_2)    
 
 # --------------------------- End of Assignment No 04 ----------------------------------    
 
@@ -363,6 +449,24 @@ print("Spaces =", spaces)
 
 # Assignment No 21:  Write a Python program to construct the following pattern
 
+char = "*"
+counter = 1
+diff = 1
+
+for n in range(0, 9):  
+
+    printable_character = ''
+    
+    for x in range(counter):
+        printable_character += char + ' '
+        
+    print(printable_character)    
+    
+    if counter == 5:
+        diff = -1
+    
+    counter += diff
+    
 
 # --------------------------- End of Assignment No 21 ----------------------------------    
 
@@ -370,6 +474,22 @@ print("Spaces =", spaces)
 
 # Assignment No 22:  Write a Python program to construct the following pattern
 
+counter = 1
+diff = 1
+
+for n in range(0, 9):  
+
+    printable_character = ''
+    
+    for x in range(counter):
+        printable_character += str(x+1) + ' '
+        
+    print(printable_character)    
+    
+    if counter == 5:
+        diff = -1
+    
+    counter += diff
 
 # --------------------------- End of Assignment No 22 ----------------------------------    
 
@@ -377,5 +497,18 @@ print("Spaces =", spaces)
 
 # Assignment No 23:  Write a Python program to construct the following pattern
 
+counter = 1
+diff = 1
 
+for n in range(0, 9):  
+
+    printable_character = ''
+    
+    for x in range(counter):
+        printable_character += str(n+1)
+        
+    print(printable_character)    
+    
+    counter += diff
+    
 # --------------------------- End of Assignment No 23 ----------------------------------    

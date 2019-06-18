@@ -252,6 +252,19 @@ print("Binary Representation of", num, "is", binary)
 
 # Assignment No 17:  Binary to Decimal Converter
 
+num = int(input("Enter a Binary number: "))
+
+digits = len(str(num))
+print (digits)
+dec = 0
+
+counter = 1
+
+for x in str(num):
+    dec += math.pow(2, digits - counter) * int(x)
+    counter += 1
+    
+print("Decimal Representation of", num, "is", int(dec))
 
 # --------------------------- End of Assignment No 17 ----------------------------------    
 

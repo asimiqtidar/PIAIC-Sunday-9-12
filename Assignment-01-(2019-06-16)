@@ -1,16 +1,16 @@
-# --------------------------- Start of Assignment No 01 ----------------------------------
+# --------------------------- Start of Question No 01 ----------------------------------
 
-# Assignment No 01:  Calculate Area of a Circle
+# Question No 01:  Calculate Area of a Circle
 
 radius = float(input("Input Radius: "))
 area = radius * radius * 22 / 7
 print("Area of Circle with radius", radius, "is", area)
 
-# --------------------------- End of Assignment No 01 ----------------------------------
+# --------------------------- End of Question No 01 ----------------------------------
 
-# --------------------------- Start of Assignment No 02 ----------------------------------
+# --------------------------- Start of Question No 02 ----------------------------------
 
-# Assignment No 02:  Check Number either positive, negative or zero
+# Question No 02:  Check Number either positive, negative or zero
 
 num = int(input("Enter Number: "))
 
@@ -21,11 +21,11 @@ elif num < 0:
 else:
     print("Zero Entered")
     
-# --------------------------- End of Assignment No 02 ----------------------------------    
+# --------------------------- End of Question No 02 ----------------------------------    
 
-# --------------------------- Start of Assignment No 03 ----------------------------------
+# --------------------------- Start of Question No 03 ----------------------------------
 
-# Assignment No 03:  Divisibility Check of two numbers
+# Question No 03:  Divisibility Check of two numbers
 
 numerator = int(input("Enter Numerator: "))
 denominator = int(input("Enter Denominator: "))
@@ -35,11 +35,11 @@ if ((numerator / denominator) == int(numerator / denominator)):
 else:
     print("Number", numerator, "is not Completely divisible by ", denominator)
     
-# --------------------------- End of Assignment No 03 ----------------------------------    
+# --------------------------- End of Question No 03 ----------------------------------    
 
-# --------------------------- Start of Assignment No 04 ----------------------------------
+# --------------------------- Start of Question No 04 ----------------------------------
 
-# Assignment No 04:  Days Calculator
+# Question No 04:  Days Calculator
 
 # ====================================== Method 1 ==========================================
 def isLeapYear (y):
@@ -128,22 +128,22 @@ d = d2 - d1
 
 print("There are", d.days, "days in between", date_str_1, "and", date_str_2)    
 
-# --------------------------- End of Assignment No 04 ----------------------------------    
+# --------------------------- End of Question No 04 ----------------------------------    
 
-# --------------------------- Start of Assignment No 05 ----------------------------------
+# --------------------------- Start of Question No 05 ----------------------------------
 
-# Assignment No 05:  Calculate Volume of a sphere
+# Question No 05:  Calculate Volume of a sphere
 
 radius = float(input("Enter Radius of Sphere: "))
 vol = (4 * 22 * radius * radius * radius) / (3 * 7)
 
 print("Volume of the Sphere with Radius", radius, "is", vol)
 
-# --------------------------- End of Assignment No 05 ----------------------------------    
+# --------------------------- End of Question No 05 ----------------------------------    
 
-# --------------------------- Start of Assignment No 06 ----------------------------------
+# --------------------------- Start of Question No 06 ----------------------------------
 
-# Assignment No 06:  Copy string n times
+# Question No 06:  Copy string n times
 
 ustr = input("Enter String: ")
 num = int(input("How many copies of String you need: "))
@@ -155,11 +155,11 @@ for x in range(num):
     
 print(num, "Copies of", ustr, "are", st)
 
-# --------------------------- End of Assignment No 06 ----------------------------------    
+# --------------------------- End of Question No 06 ----------------------------------    
 
-# --------------------------- Start of Assignment No 07 ----------------------------------
+# --------------------------- Start of Question No 07 ----------------------------------
 
-# Assignment No 07:  Check if number is Even or Odd
+# Question No 07:  Check if number is Even or Odd
 
 num = int(input("Enter Number: "))
 
@@ -169,11 +169,11 @@ else:
     print(num, "is Odd")
     
 
-# --------------------------- End of Assignment No 07 ----------------------------------    
+# --------------------------- End of Question No 07 ----------------------------------    
 
-# --------------------------- Start of Assignment No 08 ----------------------------------
+# --------------------------- Start of Question No 08 ----------------------------------
 
-# Assignment No 08:  Vowel Tester
+# Question No 08:  Vowel Tester
 
 vowels = ("A", "E", "I", "O", "U")
 
@@ -190,11 +190,11 @@ if (vowel_found == 1):
 else:
     print("Letter", st, "is not Vowel")
 
-# --------------------------- End of Assignment No 08 ----------------------------------    
+# --------------------------- End of Question No 08 ----------------------------------    
 
-# --------------------------- Start of Assignment No 09 ----------------------------------
+# --------------------------- Start of Question No 09 ----------------------------------
 
-# Assignment No 09:  Triangle area
+# Question No 09:  Triangle area
 
 base = float(input("Enter magnitude of Triangle base: "))
 height = float(input("Enter Magnitude of Triangle Height: "))
@@ -203,11 +203,11 @@ area = (base * height) / 2
 
 print("Area of a Triangle with Height", height, "and Base", base, "is", area)
 
-# --------------------------- End of Assignment No 09 ----------------------------------    
+# --------------------------- End of Question No 09 ----------------------------------    
 
-# --------------------------- Start of Assignment No 10 ----------------------------------
+# --------------------------- Start of Question No 10 ----------------------------------
 
-# Assignment No 10:  Calculate Interest
+# Question No 10:  Calculate Interest
 
 p = float(input("Please enter principal amount: "))
 rate = float(input("Please Enter Rate of interest in %: "))
@@ -222,11 +222,11 @@ interest = p * (powered_rate - 1)
 
 print("After", years, "years, your principal amount", p, "over an interest rate of", rate, "% will be", p + interest)
 
-# --------------------------- End of Assignment No 10 ----------------------------------    
+# --------------------------- End of Question No 10 ----------------------------------    
 
-# --------------------------- Start of Assignment No 11 ----------------------------------
+# --------------------------- Start of Question No 11 ----------------------------------
 
-# Assignment No 11:  Euclidean distance
+# Question No 11:  Euclidean distance
 
 import math
 
@@ -239,11 +239,11 @@ d = math.sqrt(math.pow((x2-x1), 2) + math.pow((y2-y1), 2))
 
 print("Distance between points (", x1, ",", y1, ") and (", x2, ",", y2, ") is", d)
 
-# --------------------------- End of Assignment No 11 ----------------------------------    
+# --------------------------- End of Question No 11 ----------------------------------    
 
-# --------------------------- Start of Assignment No 12 ----------------------------------
+# --------------------------- Start of Question No 12 ----------------------------------
 
-# Assignment No 12:  Feet to Centimeter Converter
+# Question No 12:  Feet to Centimeter Converter
 
 h = float(input("Enter Height in Feet: "))
 
@@ -251,11 +251,11 @@ cm = h * 30.48
 
 print("There are", cm, "Cm in", h, "ft")
 
-# --------------------------- End of Assignment No 12 ----------------------------------    
+# --------------------------- End of Question No 12 ----------------------------------    
 
-# --------------------------- Start of Assignment No 13 ----------------------------------
+# --------------------------- Start of Question No 13 ----------------------------------
 
-# Assignment No 13:  BMI Calculator
+# Question No 13:  BMI Calculator
 
 import math
 
@@ -269,11 +269,11 @@ bmi = w / math.pow(hm, 2)
 
 print("Your BMI is", bmi)
 
-# --------------------------- End of Assignment No 13 ----------------------------------    
+# --------------------------- End of Question No 13 ----------------------------------    
 
-# --------------------------- Start of Assignment No 14 ----------------------------------
+# --------------------------- Start of Question No 14 ----------------------------------
 
-# Assignment No 14:  Sum of n Positive Integers
+# Question No 14:  Sum of n Positive Integers
 
 num = int(input("Enter value of n: "))
 
@@ -284,11 +284,11 @@ for x in range(num):
     
 print("Sum of n Positive integers till", num, "is", total)
 
-# --------------------------- End of Assignment No 14 ----------------------------------    
+# --------------------------- End of Question No 14 ----------------------------------    
 
-# --------------------------- Start of Assignment No 15 ----------------------------------
+# --------------------------- Start of Question No 15 ----------------------------------
 
-# Assignment No 15:  Digits Sum of a Number
+# Question No 15:  Digits Sum of a Number
 
 n = str(input("Enter a number: "))
 
@@ -305,11 +305,11 @@ for x in n:
         
 print("Sum of", st, "is", total)
 
-# --------------------------- End of Assignment No 15 ----------------------------------    
+# --------------------------- End of Question No 15 ----------------------------------    
 
-# --------------------------- Start of Assignment No 16 ----------------------------------
+# --------------------------- Start of Question No 16 ----------------------------------
 
-# Assignment No 16:  Decimal to Binary Converter
+# Question No 16:  Decimal to Binary Converter
 
 num = int(input("Enter a decimal number: "))
 
@@ -332,11 +332,11 @@ while (True):
 
 print("Binary Representation of", num, "is", binary)
 
-# --------------------------- End of Assignment No 16 ----------------------------------    
+# --------------------------- End of Question No 16 ----------------------------------    
 
-# --------------------------- Start of Assignment No 17 ----------------------------------
+# --------------------------- Start of Question No 17 ----------------------------------
 
-# Assignment No 17:  Binary to Decimal Converter
+# Question No 17:  Binary to Decimal Converter
 
 num = int(input("Enter a Binary number: "))
 
@@ -352,11 +352,11 @@ for x in str(num):
     
 print("Decimal Representation of", num, "is", int(dec))
 
-# --------------------------- End of Assignment No 17 ----------------------------------    
+# --------------------------- End of Question No 17 ----------------------------------    
 
-# --------------------------- Start of Assignment No 18 ----------------------------------
+# --------------------------- Start of Question No 18 ----------------------------------
 
-# Assignment No 18:  Vowel and Consonants Counter
+# Question No 18:  Vowel and Consonants Counter
 
 #------- function to check if a single character is a vowel or not ---------
 def is_vowel(chr, arr):
@@ -384,11 +384,11 @@ print("Vowels:", total_vowels)
 print("Consonants:", total_consonants)
 
 
-# --------------------------- End of Assignment No 18 ----------------------------------    
+# --------------------------- End of Question No 18 ----------------------------------    
 
-# --------------------------- Start of Assignment No 19 ----------------------------------
+# --------------------------- Start of Question No 19 ----------------------------------
 
-# Assignment No 19:  Palindrome tester
+# Question No 19:  Palindrome tester
 
 str1 = str(input("Enter text: "))
 str2 = ''
@@ -402,11 +402,11 @@ if (str1.upper() == str2.upper()):
 else:           
     print("Text", str1, "is not a Palindrome")
     
-# --------------------------- End of Assignment No 19 ----------------------------------    
+# --------------------------- End of Question No 19 ----------------------------------    
 
-# --------------------------- Start of Assignment No 20 ----------------------------------
+# --------------------------- Start of Question No 20 ----------------------------------
 
-# Assignment No 20:  Count Alphabets, Numbers and Special Characters
+# Question No 20:  Count Alphabets, Numbers and Special Characters
 
 #------- function to check if a single character is an Alphabet or not ---------
 def isAlphabet(chr, arr):
@@ -443,11 +443,11 @@ print("Alphabets =", alphas)
 print("Special Characters =", specials)        
 print("Spaces =", spaces)      
 
-# --------------------------- End of Assignment No 20 ----------------------------------    
+# --------------------------- End of Question No 20 ----------------------------------    
 
-# --------------------------- Start of Assignment No 21 ----------------------------------
+# --------------------------- Start of Question No 21 ----------------------------------
 
-# Assignment No 21:  Write a Python program to construct the following pattern
+# Question No 21:  Write a Python program to construct the following pattern
 
 char = "*"
 counter = 1
@@ -468,11 +468,11 @@ for n in range(0, 9):
     counter += diff
     
 
-# --------------------------- End of Assignment No 21 ----------------------------------    
+# --------------------------- End of Question No 21 ----------------------------------    
 
-# --------------------------- Start of Assignment No 22 ----------------------------------
+# --------------------------- Start of Question No 22 ----------------------------------
 
-# Assignment No 22:  Write a Python program to construct the following pattern
+# Question No 22:  Write a Python program to construct the following pattern
 
 counter = 1
 diff = 1
@@ -491,11 +491,11 @@ for n in range(0, 9):
     
     counter += diff
 
-# --------------------------- End of Assignment No 22 ----------------------------------    
+# --------------------------- End of Question No 22 ----------------------------------    
 
-# --------------------------- Start of Assignment No 23 ----------------------------------
+# --------------------------- Start of Question No 23 ----------------------------------
 
-# Assignment No 23:  Write a Python program to construct the following pattern
+# Question No 23:  Write a Python program to construct the following pattern
 
 counter = 1
 diff = 1
@@ -511,4 +511,4 @@ for n in range(0, 9):
     
     counter += diff
     
-# --------------------------- End of Assignment No 23 ----------------------------------    
+# --------------------------- End of Question No 23 ----------------------------------    
